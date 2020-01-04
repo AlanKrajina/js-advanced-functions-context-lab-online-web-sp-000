@@ -22,7 +22,7 @@ function createTimeInEvent(date){
     hour: parseInt(date.slice(-4),10),
     date: date.slice(0,10)
   }
-  record.timeInEvents.push(newTime)
+  this.timeInEvents.push(newTime)
   return record
 }
 
