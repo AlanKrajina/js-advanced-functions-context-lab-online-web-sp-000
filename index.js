@@ -23,7 +23,7 @@ function createTimeInEvent(date){
     date: date.slice(0,10)
   }
   this.timeInEvents.push(newTime)
-  return record
+  return this
 }
 
 function createTimeOutEvent(record,date){
