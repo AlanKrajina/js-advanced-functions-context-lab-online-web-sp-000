@@ -16,7 +16,7 @@ function createEmployeeRecords(twoRows){
   return twoRows.map(person => createEmployeeRecord(person))
 }
 
-function createTimeInEvent(record,date){
+function createTimeInEvent(date){
   let newTime = {
     type: 'TimeIn',
     hour: parseInt(date.slice(-4),10),
