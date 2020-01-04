@@ -26,14 +26,14 @@ function createTimeInEvent(date){
   return this
 }
 
-function createTimeOutEvent(record,date){
+function createTimeOutEvent(date){
   let newTime = {
     type: 'TimeOut',
     hour: parseInt(date.slice(-4),10),
     date: date.slice(0,10)
   }
-  record.timeOutEvents.push(newTime)
-  return record
+  this.timeOutEvents.push(newTime)
+  return this
 }
 
 function hoursWorkedOnDate(record, date) {
